@@ -1,0 +1,11 @@
+year_a, year_b = input().split()
+mondays = 0
+months = range(1, 13)
+for year in range(int(year_a), int(year_b)+1):
+    from datetime import datetime
+    for month in months:
+        year_of_month = datetime(year, month, 1)
+        day_of_weekend = datetime.strftime(year_of_month, "%A")
+        if day_of_weekend == "Monday":
+            mondays += 1 
+print(mondays)
