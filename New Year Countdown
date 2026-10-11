@@ -1,0 +1,9 @@
+from datetime import datetime
+given_dt = input()
+given_time = datetime.strptime(given_dt, "%b %d %Y %I:%M %p")
+new_year = datetime(given_time.year + 1, 1, 1, 0, 0, 0)
+diff = new_year - given_time
+total_min = int(diff.total_seconds() // 60)
+hours = total_min // 60
+minutes = total_min % 60
+print("{} hours {} minutes".format(hours, minutes))
