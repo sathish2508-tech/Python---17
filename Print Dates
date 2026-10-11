@@ -1,0 +1,8 @@
+from datetime import datetime, timedelta
+inp_dt = input()
+dt = datetime.strptime(inp_dt, "%d %b %Y")
+yesterday = dt - timedelta(days = 1)
+tomarrow = dt + timedelta(days = 1)
+print(yesterday)
+print(dt)
+print(tomarrow)
