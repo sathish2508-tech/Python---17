@@ -1,0 +1,8 @@
+sen = list(map(int, input().split()))
+result = set(sen)
+i = 1 
+while True:
+    if i not in result:
+        print(i)
+        break
+    i += 1
