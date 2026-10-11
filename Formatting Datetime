@@ -1,0 +1,5 @@
+from datetime import datetime
+input_dt = input()
+dt_format = datetime.strptime(input_dt, "%b %d %Y %I:%M%p")
+format_data = datetime.strftime(dt_format, "%d/%m/%Y %H:%M:%S")
+print(format_data)
