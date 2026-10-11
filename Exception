@@ -1,0 +1,8 @@
+try:
+    v1, v2 = map(int, input().split())
+    v3 = v1 / v2
+    print(v3)
+except ZeroDivisionError:
+    print("Denominator can't be 0")
+except ValueError:
+    print("Input should be an integer")
