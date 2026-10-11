@@ -1,0 +1,8 @@
+from datetime import datetime, timedelta
+inp_1 = input()
+inp_2 = input()
+v1 = datetime.strptime(inp_1, "%b %d %Y")
+v2 = datetime.strptime(inp_2, "%b %d %Y")
+no_of_days = (v2 - v1).days
+for i in range(no_of_days + 1):
+    print(v1 + timedelta(days = i))
