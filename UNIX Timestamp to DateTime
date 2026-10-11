@@ -1,0 +1,6 @@
+import datetime
+start_date = datetime.datetime(1970, 1, 1)
+u = int(input())
+s = datetime.timedelta(seconds=u)
+result = s + start_date
+print(result)
